@@ -20,6 +20,7 @@ node {
     //sh "${mvnHome}/bin/mvn -f sdk-java-starter/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-error/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-dao/pom.xml clean deploy"
-    sh "${mvnHome}/bin/mvn -f sdk-java-interceptor/pom.xml clean deploy"
+    //sh "${mvnHome}/bin/mvn -f sdk-java-interceptor/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-utility/pom.xml clean deploy"
   
 }
