@@ -23,6 +23,7 @@ node {
     //sh "${mvnHome}/bin/mvn -f sdk-java-interceptor/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-utility/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-configuration/pom.xml clean deploy"
-    sh "${mvnHome}/bin/mvn -f sdk-java-si-interceptor/pom.xml clean deploy"
+    //sh "${mvnHome}/bin/mvn -f sdk-java-si-interceptor/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-camel-interceptor/pom.xml clean deploy"
   
 }
