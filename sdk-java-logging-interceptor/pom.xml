@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>sdk-java-logging-interceptor</artifactId>
+	<version>6.0.0.1</version>
+	<name>sdk-java-logging-interceptor</name>
+	<description>This dependency adds the performance and audit logging through the AJSC Interceptor</description>
+
+	<parent>
+		<groupId>com.att.ajsc</groupId>
+		<artifactId>sdk-java-starter-parent</artifactId>
+		<version>6.1.0.4</version>
+	</parent>
+	
+	<properties>
+		<sdk.java.utility>6.2.0.5</sdk.java.utility>
+		<sdk.java.interceptor>6.2.0.4</sdk.java.interceptor>
+		<sdk.java.camel.interceptor>6.2.0.5</sdk.java.camel.interceptor>
+		<sdk.java.si.interceptor>6.2.0.1</sdk.java.si.interceptor>
+		<sdk.java.restlet.interceptor>6.2.0.4</sdk.java.restlet.interceptor>
+		<project.scm.id>git-server</project.scm.id>
+	</properties>
+
+	<dependencies>
+	    	<dependency>
+			<groupId>io.prometheus.jmx</groupId>
+			<artifactId>collector</artifactId>
+			<version>0.7</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>simpleclient</artifactId>
+					<groupId>io.prometheus</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.prometheus</groupId>
+			<artifactId>simpleclient</artifactId>
+			<version>0.0.19</version>
+		</dependency>
+		<dependency>
+			<groupId>io.prometheus</groupId>
+			<artifactId>simpleclient_common</artifactId>
+			<version>0.0.19</version>
+		</dependency>
+		<dependency>
+			<groupId>io.prometheus</groupId>
+			<artifactId>simpleclient_hotspot</artifactId>
+			<version>0.0.19</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-utility</artifactId>
+			<version>${sdk.java.utility}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>sdk-java-interceptor</artifactId>
+					<groupId>com.att.ajsc</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-interceptor</artifactId>
+			<version>${sdk.java.interceptor}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-camel-interceptor</artifactId>
+			<version>${sdk.java.camel.interceptor}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-si-interceptor</artifactId>
+			<version>${sdk.java.si.interceptor}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-restlet-interceptor</artifactId>
+			<version>${sdk.java.restlet.interceptor}</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
