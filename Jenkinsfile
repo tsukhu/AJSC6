@@ -28,6 +28,7 @@ node {
     //sh "${mvnHome}/bin/mvn -f sdk-java-restlet-interceptor/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-introscope-interceptors/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-logging-interceptor/pom.xml clean deploy"
-    sh "${mvnHome}/bin/mvn -f sdk-java-springservice/pom.xml clean deploy"
+    //sh "${mvnHome}/bin/mvn -f sdk-java-springservice/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-camel-rest/pom.xml clean deploy"
   
 }
