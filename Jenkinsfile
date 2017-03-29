@@ -16,6 +16,7 @@ node {
     // Run the maven build
     //sh for unix bat for windows
 	
-    sh "${mvnHome}/bin/mvn -f sdk-java-common-logging/pom.xml clean deploy"
+    //sh "${mvnHome}/bin/mvn -f sdk-java-common-logging/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-starter/pom.xml clean deploy"
   
 }
