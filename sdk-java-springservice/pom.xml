@@ -1,0 +1,86 @@
+<!--
+      BSD License
+       
+      Copyright (c) 2017, AT&T Intellectual Property.  All other rights reserved.
+       
+      Redistribution and use in source and binary forms, with or without modification, are permitted
+      provided that the following conditions are met:
+       
+      1. Redistributions of source code must retain the above copyright notice, this list of conditions
+         and the following disclaimer.
+      2. Redistributions in binary form must reproduce the above copyright notice, this list of
+         conditions and the following disclaimer in the documentation and/or other materials provided
+         with the distribution.
+      3. All advertising materials mentioning features or use of this software must display the
+         following acknowledgement:  This product includes software developed by the AT&T.
+      4. Neither the name of AT&T nor the names of its contributors may be used to endorse or
+         promote products derived from this software without specific prior written permission.
+       
+      THIS SOFTWARE IS PROVIDED BY AT&T INTELLECTUAL PROPERTY ''AS IS'' AND ANY EXPRESS OR
+      IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+      MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+      SHALL AT&T INTELLECTUAL PROPERTY BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+      SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+      PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;  LOSS OF USE, DATA, OR PROFITS;
+      OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+      CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+      DAMAGE.
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.att.ajsc</groupId>
+	<artifactId>sdk-java-springservice</artifactId>
+	<version>6.2.0.4</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>com.att.ajsc</groupId>
+		<artifactId>sdk-java-starter-parent</artifactId>
+		<version>6.1.0.4</version>
+	</parent>
+	
+	<properties>
+		<sdk.java.dao>6.2.0.5</sdk.java.dao>
+		<project.scm.id>git-server</project.scm.id>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.att.ajsc</groupId>
+			<artifactId>sdk-java-dao</artifactId>
+			<version>${sdk.java.dao}</version>
+		</dependency>
+		<dependency>
+    		<groupId>jaxen</groupId>
+    		<artifactId>jaxen</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

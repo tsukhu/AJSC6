@@ -20,6 +20,3 @@ target/
 
 # SVN
 .svn/
-
-logs/
-debug-logs/
