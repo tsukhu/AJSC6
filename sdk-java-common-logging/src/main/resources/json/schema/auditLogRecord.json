@@ -1,0 +1,82 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "AuditLogRecord",
+	"description": "The message body of an audit log",
+	"type": "object",
+	"properties": {
+		"description": {
+			"description": "Record Description",
+			"type": "string"
+		},
+		"nodeName": {
+			"description": "Name of the node",
+			"type": "string"
+		},
+		"applicationId": {
+			"description": "Application Id",
+			"type": "string"
+		},
+		"originalMessageId": {
+			"description": "OriginalMessage Id",
+			"type": "string"
+		},
+		"uniqueTransactionId": {
+			"description": "Global Unique Id of the transaction.",
+			"type": "string"
+		},
+		"conversationid": {
+			"description": "This identifier is used to label a multi-message asynchronous communication between several applications/components.  If an application is not involved in a multi-message asynchronous communication, this argument can be null.  This field is also used to correlate this record to related exception logs in GEH.",
+			"type": "string"
+		},
+		"transactionName": {
+			"description": "Unique name of the interaction being invoked.",
+			"type": "string"
+		},
+		"transactionStatus": {
+			"description": "The current state of the transaction lifecycle.  Must be one of the following:(INITIATED, COMPLETE, ERROR, WARN)",
+			"type": "string"
+		},
+		"responseCode": {
+			"description": "Public response code.",
+			"type": "string"
+		},
+		"responseDescription": {
+			"description": "Public response description.",
+			"type": "string"
+		},
+		"endTimestamp": {
+			"description": "Date/Timestamp of the fault.",
+			"type": "string"
+		},
+		"initiatedTimestamp": {
+			"description": "The FaultTimestamp from the corresponding INITIATED audit log",
+			"type": "string"
+		},
+		"elapsedTime": {
+			"description": "The difference between the Initiated timestamp and the complete/error timstamp in milliseconds",
+			"type": "string"
+		},
+		"clientIp": {
+			"description": "The client IP address",
+			"type": "string"
+		},
+		"cluster": {
+			"description": "The relevant virtual cluster / route offer for tracking purposes.",
+			"type": "string"
+		},
+		"vtier": {
+			"description": "The vtier the engine is running on, if available.",
+			"type": "string"
+		},
+		"httpMethod": {
+			"description": "The HTTP method (GET, POST, DELETE, etc.)",
+			"type": "string"
+		},
+		"requestURL": {
+			"description": "The request URL.",
+			"type": "string"
+		},
+		"required": [
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MinorPerformanceTransactionOutbound",
+	"description": "Subcomponent of the performanceLogRecord; Represents the inner outbound transaction of the request",
+	"type": "object",
+	"properties": {
+		"downstreamCallType": {
+			"description": "placeholder value to indicate either: InvokeAdapter or InvokeService",
+			"type": "string"
+		},
+		"transactionStatus": {
+			"description": "The current state of the transaction lifecycle.  Must be one of the following:(INITIATED, COMPLETE, ERROR, WARN)",
+			"type": "string"
+		},
+		"endTime": {
+			"description": "Julian DateTime representing the end of the mindor transaction",
+			"type": "string"
+		},
+		"adapterDataSourceType": {
+			"description": "Abbreviated name of the Adapter Data Source Type",
+			"type": "string"
+		},
+		"serviceName": {
+			"description": "Name of the Service Requested",
+			"type": "string"
+		},
+		"required": []
+	}
+}

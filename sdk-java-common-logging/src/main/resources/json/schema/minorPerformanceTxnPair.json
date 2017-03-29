@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MinorPerformanceTxnPair",
+	"description": "Subcomponent of the performanceLogRecord; Represents a pair of inner transactions of the request",
+	"name":"minorPerformanceTxnPair",
+	"type": "object",
+	"properties": {
+		"minorPerformanceTxnInbound":{"$ref": "minorPerformanceTxnInbound.json/"},
+		"minorPerformanceTxnOutbound":{"$ref": "minorPerformanceTxnOutbound.json/"},
+		"required": [
+		]
+	}
+}

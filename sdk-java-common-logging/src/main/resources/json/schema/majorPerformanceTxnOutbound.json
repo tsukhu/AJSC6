@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MajorPerformanceTransaction",
+	"description": "Subcomponent of the performanceLogRecord; Represents the outer transaction of the request",
+	"type": "object",
+	"properties": {
+		"transactionStatus": {
+				"description": "The current state of the transaction lifecycle.  Must be one of the following:(INITIATED, COMPLETE, ERROR, WARN)",
+				"type": "string"
+			},
+		"endTime": {
+				"description": "Julian Data End Time",
+				"type": "string"
+			},
+		"serviceName": {
+				"description": "Name of the Service Requested",
+				"type": "string"
+			},
+
+		"required": [
+		]
+	}
+}

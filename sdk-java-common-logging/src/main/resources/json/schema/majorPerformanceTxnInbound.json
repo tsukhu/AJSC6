@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MajorPerformanceTransactionInbound",
+	"description": "Subcomponent of the performanceLogRecord; Represents the outer transaction of the request",
+	"type": "object",
+	"properties": {
+		"transactionStatus": {
+				"description": "The current state of the transaction lifecycle.  Must be one of the following:(INITIATED, COMPLETE, ERROR, WARN)",
+				"type": "string"
+			},
+		"startTime": {
+				"description": "Julian Data Start Time",
+				"type": "string"
+			},
+		"serviceName": {
+				"description": "Name of the Service Requested",
+				"type": "string"
+			},
+		"required": [
+		]
+	}
+}

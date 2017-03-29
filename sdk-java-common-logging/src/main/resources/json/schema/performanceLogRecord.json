@@ -1,0 +1,96 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "PerformanceLogRecord",
+	"description": "The message body of an performance log",
+	"type": "object",
+	"properties": {
+		"startTime": {
+			"description": "",
+			"type": "string"
+		},
+		"conversationId": {
+			"description": "",
+			"type": "string"
+		},
+		"uniqueTransactionId": {
+			"description": "",
+			"type": "string"
+		},
+		"serviceName": {
+			"description": "",
+			"type": "string"
+		},
+		"requestMsgSize": {
+			"description": "",
+			"type": "string"
+		},
+		"responseMsgSize": {
+			"description": "",
+			"type": "string"
+		},
+		"httpMethod": {
+			"description": "",
+			"type": "string"
+		},
+		"userID": {
+			"description": "",
+			"type": "string"
+		},
+		
+		"originatorId": {
+			"description": "",
+			"type": "string"
+		},
+		"cluster": {
+			"description": "",
+			"type": "string"
+		},
+		"vtier": {
+			"description": "",
+			"type": "string"
+		},
+		"nodeName": {
+			"description": "",
+			"type": "string"
+		},
+		"transactionStatus": {
+			"description": "",
+			"type": "string"
+		},
+		"responseCode": {
+			"description": "",
+			"type": "string"
+		},
+		"responseDescription": {
+			"description": "",
+			"type": "string"
+		},
+		"faultEntity": {
+			"description": "",
+			"type": "string"
+		},
+		"externalFaultCode": {
+			"description": "",
+			"type": "string"
+		},
+		"externalFaultDescription": {
+			"description": "",
+			"type": "string"
+		},		
+		"majorPerformanceTxnInbound": {
+			"$ref": "majorPerformanceTxnInbound.json/"
+		},
+		"majorPerformanceTxnOutbound": {
+			"$ref": "majorPerformanceTxnOutbound.json/"
+		},
+		"minorPerformanceTxnPairs": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "minorPerformanceTxnPair.json/"
+			},
+			"uniqueItems": true
+		},
+		"required": []
+	}
+}

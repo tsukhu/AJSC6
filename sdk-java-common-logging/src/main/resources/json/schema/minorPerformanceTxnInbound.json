@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MinorPerformanceTransactionInbound",
+	"description": "Subcomponent of the performanceLogRecord; Represents the inner inbound transaction of the request",
+	"type": "object",
+	"properties": {
+		"downstreamCallType": {
+				"description": "placeholder value to indicate either: InvokeAdapter or InvokeService",
+				"type": "string"
+			},
+		"transactionStatus": {
+				"description": "The current state of the transaction lifecycle.  Must be one of the following:(INITIATED, COMPLETE, ERROR, WARN)",
+				"type": "string"
+			},
+		"startTime": {
+				"description": "Julian Data Start Time",
+				"type": "string"
+			},
+		"adapterDataSourceType": {
+				"description": "Abbreviated name of the Adapter Data Source Type",
+				"type": "string"
+			},
+		"serviceName": {
+				"description": "Name of the Service Requested",
+				"type": "string"
+			},
+		"required": [
+		]
+	}
+}
