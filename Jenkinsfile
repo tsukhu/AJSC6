@@ -30,6 +30,7 @@ node {
     //sh "${mvnHome}/bin/mvn -f sdk-java-logging-interceptor/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-springservice/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-camel-rest/pom.xml clean deploy"
-    sh "${mvnHome}/bin/mvn -f sdk-java-spring-cloud-file/pom.xml clean deploy"
+    //sh "${mvnHome}/bin/mvn -f sdk-java-spring-cloud-file/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-common-interceptors/pom.xml clean deploy"
   
 }

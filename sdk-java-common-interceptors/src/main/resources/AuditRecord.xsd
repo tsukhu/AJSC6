@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Shane Fisher (CINGULAR) -->
+
+<!-- jg Add a TargetNamespace for JAXB purposes -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:log="http://att.com/m2e/csi/logging/AuditRecord.xsd"
+    targetNamespace="http://att.com/m2e/csi/logging/AuditRecord.xsd"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="AuditRecord">
+		<xs:annotation>
+			<xs:documentation>Audit Record</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Description" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Record Description</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="InstanceName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Name of the physical server</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ApplicationId" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Application Id</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="OriginalMessageId" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>OriginalMessage Id</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="UniqueTransactionId" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Global Unique Id of the transaction.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="OriginatorId" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Identifies the originator of the transaction.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Subject" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>This is the name of the messaging bus channel.  This field is also used to correlate this record to related exception logs in GEH.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ConversationId" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>This identifier is used to label a multi-message asynchronous communication between several applications/components.  If an application is not involved in a multi-message asynchronous communication, this argument can be null.  This field is also used to correlate this record to related exception logs in GEH.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="OriginationSystemId" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This is an identifier associated with the application that is sending this exception message.  Each software application (or component) is assumed to have pre-assigned identifiers that adhere to some convention.  If this is null or an empty string, a value of NA is used.  This field is also used to correlate this record to related exception logs in GEH.
+
+If ~ is the delimiter, the format of the originationSystemId is 
+subNumber~ban~appId~interface~seqNumber
+where
+subNumber = subscriber cell phone number
+ban = billing account number
+appId = application id
+activityCode = unique id of the transaction
+seqNumber = globally unique id</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="OriginationSystemVersion" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>System Version</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="OriginationSystemName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>This is the application (or component) name.  If this is null or an empty string, a value of “NA” is used.  This field is also used to correlate this record to related exception logs in GEH.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="SourceClass" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>The class name where the Audit Record was generated.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="SourceMethod" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The method name where the Audit Record was generated. </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TransactionName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Unique name of the interaction being invoked.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TransactionStatus" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>The current state of the transaction lifecycle.  Must be one of the following:
+(INITIATED, COMPLETE, ERROR, WARN)</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="HostIPAddress" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Host IP Address</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="HostName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Host Name</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ResponseCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Public response code.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ResponseDescription" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Public response description.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultTimestamp" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Date/Timestamp of the fault.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultSequenceNumber" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Fault sequence number</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultLevel" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Fault Level</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Canonical error code.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultDescription" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Canonical error description.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ExternalFaultCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Fault code returned by the service provider, prior to canonical mapping.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ExternalFaultDescription" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Fault description returned by the service provider, prior to canonical mapping.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FaultEntity" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Name of the system returning the fault (eg CAM).</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="InitiatedTimestamp" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The FaultTimestamp from the corresponding INITIATED audit log</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ElapsedTime" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The difference between the Initiated timestamp and the complete/error timstamp in milliseconds</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Mode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The value passed in through JMS or the result of the auditlogruleset Xpath for Mode/Mask.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ServiceKeyData1" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The value passed in through JMS or the result of the auditlogruleset Xpath for SERVICEKEYDATA1.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ServiceKeyData2" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The value passed in through JMS or the result of the auditlogruleset Xpath for SERVICEKEYDATA2.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Cluster" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The relevant virtual cluster / route offer for tracking purposes.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ClientApp" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Identity of the calling application, if available.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Vtier" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The vtier the engine is running on, if available.</xs:documentation>
+					</xs:annotation>
+				</xs:element>	
+				<!--  AIC additional 3 fields -->
+				<xs:element name="ClientIP" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The client IP address</xs:documentation>
+					</xs:annotation>
+				</xs:element>	
+				<xs:element name="HttpMethod" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The HTTP method (GET, POST, DELETE, etc.)</xs:documentation>
+					</xs:annotation>
+				</xs:element>	
+				<xs:element name="RequestURL" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The request URL.</xs:documentation>
+					</xs:annotation>
+				</xs:element>					
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
