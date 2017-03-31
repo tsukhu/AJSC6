@@ -1,0 +1,28 @@
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.eml
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+*.versionsBackup
+
+# SVN
+.svn/
+
+# Backups
+*~
+
+# Packages
+*.zip
