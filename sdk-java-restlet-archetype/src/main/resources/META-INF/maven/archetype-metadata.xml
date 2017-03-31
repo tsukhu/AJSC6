@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      BSD License
+       
+      Copyright (c) 2017, AT&T Intellectual Property.  All other rights reserved.
+       
+      Redistribution and use in source and binary forms, with or without modification, are permitted
+      provided that the following conditions are met:
+       
+      1. Redistributions of source code must retain the above copyright notice, this list of conditions
+         and the following disclaimer.
+      2. Redistributions in binary form must reproduce the above copyright notice, this list of
+         conditions and the following disclaimer in the documentation and/or other materials provided
+         with the distribution.
+      3. All advertising materials mentioning features or use of this software must display the
+         following acknowledgement:  This product includes software developed by the AT&T.
+      4. Neither the name of AT&T nor the names of its contributors may be used to endorse or
+         promote products derived from this software without specific prior written permission.
+       
+      THIS SOFTWARE IS PROVIDED BY AT&T INTELLECTUAL PROPERTY ''AS IS'' AND ANY EXPRESS OR
+      IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+      MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+      SHALL AT&T INTELLECTUAL PROPERTY BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+      SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+      PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;  LOSS OF USE, DATA, OR PROFITS;
+      OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+      CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+      DAMAGE.
+ -->
+
+<archetype-descriptor
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	name="sdk-java-jpa"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<requiredProperties>
+		<requiredProperty key="context-root" />
+		<!-- <requiredProperty key="biasId"/> <requiredProperty key="jenkins-joblink"/> -->
+		<requiredProperty key="docker-registry" />
+		<requiredProperty key="kube-namespace" />
+		<requiredProperty key="service-account" />
+		<requiredProperty key="service-replicas" />
+		<requiredProperty key="namespace" />
+
+		<!-- <requiredProperty key="functional-domain"/> <requiredProperty key="service-domain"/> 
+			<requiredProperty key="include-appd"/> <requiredProperty key="functional-domain-alias"/> 
+			<requiredProperty key="proxy-basepath"/> <requiredProperty key="proxy-target-url"/> 
+			<requiredProperty key="proxy-mngr-host"/> <requiredProperty key="userId"/> -->
+		<!-- <requiredProperty key="entity"/> -->
+	</requiredProperties>
+	<fileSets>
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory></directory>
+			<includes>
+				<include>README.md</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*.html</include>
+				<include>**/*.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/main/docker</directory>
+			<includes>
+				<include>**/Dockerfile</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false" encoding="UTF-8">
+			<directory>src/main/docker</directory>
+			<includes>
+				<include>**/startService.sh</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>k8s</directory>
+			<includes>
+				<include>**/*.yaml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false" encoding="UTF-8">
+			<directory>k8s</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+			<excludes>
+				<exclude>**/*.yaml</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet filtered="false" encoding="UTF-8">
+			<directory>src/main/jenkins</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/main/jenkins</directory>
+			<includes>
+				<include>**/deploy.groovy</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*.jpg</include>
+				<include>**/*.css</include>
+				<include>**/*.ico</include>
+				<include>**/*.gif</include>
+				<include>**/*.svg</include>
+				<include>**/*.ttf</include>
+				<include>**/*.png</include>
+				<include>**/*.js</include>
+				<include>**/*.eot</include>
+				<include>**/*.woff</include>
+				<include>**/*.ico</include>
+				<include>**/*.json</include>
+				<include>**/*.logo</include>
+				<include>**/*.woff2</include>
+				<include>**/*.map</include>
+				<include>**/*.xml</include>
+				<include>**/*.txt</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/test/lisa</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/test/resources</directory>
+			<includes>
+				<include>**/*.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>src/test/resources</directory>
+			<includes>
+				<include>**/*.sql</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory></directory>
+			<includes>
+				<include>.project</include>
+				<include>.classpath</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false" encoding="UTF-8">
+			<directory>etc</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>
