@@ -121,6 +121,27 @@
 	<properties>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
+	 <licenses>
+	  <license>
+	    <name>BSD License</name>
+	    <url>https://github.com/att/AJSC6/blob/master/License.txt</url>
+	  </license>
+	</licenses>
+
+	<developers>
+	   <developer>
+	     <name>Amit</name>
+	     <email></email>
+	     <organization>ATT</organization>
+	     <organizationUrl>www.att.com</organizationUrl>
+	   </developer>
+	   <developer>
+	     <name>Mohan</name>
+	     <email></email>
+	     <organization>ATT</organization>
+	     <organizationUrl>www.att.com</organizationUrl>
+	   </developer>
+	 </developers>	
 	<url>https://github.com/att/AJSC6</url>
 	<scm>
 		<connection>https://github.com/att/AJSC6.git</connection>
