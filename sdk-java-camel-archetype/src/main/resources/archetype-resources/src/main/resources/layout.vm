@@ -1,0 +1,19 @@
+<html>
+<head>
+ <title>Spring with Velocity</title>  
+</head>
+<body>
+  <div>
+    #parse("/vt/common/header.vm")
+  </div>
+  
+  
+  <div>
+  	$screen_content
+  </div>
+  
+  <div>
+       #parse("/vt/common/footer.vm")
+  </div>
+</body>
+</html>
