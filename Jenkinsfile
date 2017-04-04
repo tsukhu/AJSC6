@@ -35,8 +35,8 @@ node {
     //sh "${mvnHome}/bin/mvn -f sdk-java-restlet-common/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-aaf-interceptors/pom.xml clean deploy"
     //sh "${mvnHome}/bin/mvn -f sdk-java-rest/pom.xml clean deploy"
-    //sh "${mvnHome}/bin/mvn -f sdk-java-camel-archetype/pom.xml clean deploy"
-    //sh "${mvnHome}/bin/mvn -f sdk-java-jersey-archetype/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-camel-archetype/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f sdk-java-jersey-archetype/pom.xml clean deploy"
     sh "${mvnHome}/bin/mvn -f sdk-java-restlet-archetype/pom.xml clean deploy"
   
 }
