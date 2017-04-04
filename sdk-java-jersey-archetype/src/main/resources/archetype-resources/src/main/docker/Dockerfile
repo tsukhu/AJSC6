@@ -1,4 +1,4 @@
-FROM ${docker-registry}/com.att.ajsc/anapsix/alpine-java:8_jdk
+FROM openjdk:8-jdk
 VOLUME /tmp
 ADD ${artifactId}-${version}.jar app.jar
 VOLUME /etc
