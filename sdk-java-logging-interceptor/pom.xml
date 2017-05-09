@@ -1,22 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>sdk-java-logging-interceptor</artifactId>
-	<version>6.0.0.1</version>
+	<version>6.0.0.1-oss</version>
 	<name>sdk-java-logging-interceptor</name>
 	<description>This dependency adds the performance and audit logging through the AJSC Interceptor</description>
 
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 	
 	<properties>
-		<sdk.java.utility>6.2.0.5</sdk.java.utility>
-		<sdk.java.interceptor>6.2.0.4</sdk.java.interceptor>
-		<sdk.java.camel.interceptor>6.2.0.5</sdk.java.camel.interceptor>
-		<sdk.java.si.interceptor>6.2.0.1</sdk.java.si.interceptor>
-		<sdk.java.restlet.interceptor>6.2.0.4</sdk.java.restlet.interceptor>
+		<sdk.java.utility>6.2.0.5-oss</sdk.java.utility>
+		<sdk.java.interceptor>6.2.0.4-oss</sdk.java.interceptor>
+		<sdk.java.camel.interceptor>6.2.0.5-oss</sdk.java.camel.interceptor>
+		<sdk.java.si.interceptor>6.2.0.1-oss</sdk.java.si.interceptor>
+		<sdk.java.restlet.interceptor>6.2.0.4-oss</sdk.java.restlet.interceptor>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 
