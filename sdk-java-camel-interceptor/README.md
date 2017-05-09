@@ -5,6 +5,6 @@ In order to add this feature to your project you need to have this dependency pr
 <dependency>
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-camel-interceptor</artifactId>
-	<version>6.1</version>
+	<version>6.1-oss</version>
 </dependency>
 ```
