@@ -32,17 +32,17 @@
 
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-springservice</artifactId>
-	<version>6.2.0.4</version>
+	<version>6.2.0.4-oss</version>
 	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 	
 	<properties>
-		<sdk.java.dao>6.2.0.5</sdk.java.dao>
+		<sdk.java.dao>6.2.0.5-oss</sdk.java.dao>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 
