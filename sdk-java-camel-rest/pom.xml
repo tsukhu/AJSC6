@@ -31,20 +31,20 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>sdk-java-camel-rest</artifactId>
-	<version>6.2.0.6</version>
+	<version>6.2.0.6-oss</version>
 	<packaging>jar</packaging>
 	
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 	
 	<properties>
-		<sdk.java.camel.interceptor>6.2.0.5</sdk.java.camel.interceptor>
-		<sdk.java.configuration>6.2.0.4</sdk.java.configuration>
-		<sdk.java.utility>6.2.0.5</sdk.java.utility>
-		<sdk.java.springservice>6.2.0.4</sdk.java.springservice>
+		<sdk.java.camel.interceptor>6.2.0.5-oss</sdk.java.camel.interceptor>
+		<sdk.java.configuration>6.2.0.4-oss</sdk.java.configuration>
+		<sdk.java.utility>6.2.0.5-oss</sdk.java.utility>
+		<sdk.java.springservice>6.2.0.4-oss</sdk.java.springservice>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 
