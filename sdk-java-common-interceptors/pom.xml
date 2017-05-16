@@ -31,7 +31,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>sdk-java-common-interceptors</artifactId>
-	<version>6.1.0.6</version>
+	<version>6.1.0.6-oss</version>
 	<name>sdk-java-common-interceptors</name>
 	<description>AJSC Introscope</description>
 
@@ -39,19 +39,19 @@
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 
 
 	<properties>
-		<sdk.java.spring.cloud.file>0.0.10</sdk.java.spring.cloud.file>
-		<sdk.java.introscope.interceptors>6.0.0.1</sdk.java.introscope.interceptors>
-		<sdk.java.utility>6.2.0.5</sdk.java.utility>
-		<sdk.java.common.logging>0.0.3</sdk.java.common.logging>
-		<sdk.java.interceptor>6.2.0.4</sdk.java.interceptor>
-		<sdk.java.camel.interceptor>6.2.0.5</sdk.java.camel.interceptor>
-		<sdk.java.si.interceptor>6.2.0.1</sdk.java.si.interceptor>
-		<sdk.java.restlet.interceptor>6.2.0.4</sdk.java.restlet.interceptor>
+		<sdk.java.spring.cloud.file>0.0.10-oss</sdk.java.spring.cloud.file>
+		<sdk.java.introscope.interceptors>6.0.0.1-oss</sdk.java.introscope.interceptors>
+		<sdk.java.utility>6.2.0.5-oss</sdk.java.utility>
+		<sdk.java.common.logging>0.0.3-oss</sdk.java.common.logging>
+		<sdk.java.interceptor>6.2.0.4-oss</sdk.java.interceptor>
+		<sdk.java.camel.interceptor>6.2.0.5-oss</sdk.java.camel.interceptor>
+		<sdk.java.si.interceptor>6.2.0.1-oss</sdk.java.si.interceptor>
+		<sdk.java.restlet.interceptor>6.2.0.4-oss</sdk.java.restlet.interceptor>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 

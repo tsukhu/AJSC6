@@ -34,7 +34,7 @@
 
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-camel-archetype</artifactId>
-	<version>6.2.0.6</version>
+	<version>6.2.0.6-oss</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>sdk-java-camel-archetype</name>

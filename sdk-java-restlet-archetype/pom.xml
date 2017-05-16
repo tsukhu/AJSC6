@@ -34,7 +34,7 @@
 
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-restlet-archetype</artifactId>
-	<version>6.2.0.4</version>
+	<version>6.2.0.4-oss</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>sdk-java-restlet-archetype</name>

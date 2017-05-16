@@ -34,7 +34,7 @@
 
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-starter-parent</artifactId>
-	<version>6.1.0.4</version>
+	<version>6.1.0.4-oss</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -68,7 +68,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<docker.group>localhost:5000</docker.group>
-		<sdk.java.common.logging>0.0.3</sdk.java.common.logging>
+		<sdk.java.common.logging>0.0.3-oss</sdk.java.common.logging>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 

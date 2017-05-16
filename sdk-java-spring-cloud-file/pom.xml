@@ -31,7 +31,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-spring-cloud-file</artifactId>
-	<version>0.0.10</version>
+	<version>0.0.10-oss</version>
 	<name>Spring Cloud file</name>
 	<description>Spring Cloud file</description>
 
@@ -81,7 +81,7 @@
 			<dependency>
 				<groupId>com.att.ajsc</groupId>
 				<artifactId>sdk-java-starter-parent</artifactId>
-				<version>6.1.0.4</version>
+				<version>6.1.0.4-oss</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>

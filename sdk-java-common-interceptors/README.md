@@ -11,6 +11,6 @@ To use this interceptor in a service developer has to add the following dependen
     <dependency>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-common-interceptor</artifactId>
-		<version>6.0.0.0-SNAPSHOT</version>
+		<version>6.0.0.0-oss</version>
 	</dependency>,
     

@@ -4,7 +4,7 @@
 
 	<groupId>com.att.ajsc</groupId>
 	<artifactId>sdk-java-jersey-archetype</artifactId>
-	<version>6.3.3.8</version>
+	<version>6.3.3.8-oss</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>sdk-java-jersey-archetype</name>

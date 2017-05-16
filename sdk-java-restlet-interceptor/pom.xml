@@ -31,14 +31,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>sdk-java-restlet-interceptor</artifactId>
-	<version>6.2.0.4</version>
+	<version>6.2.0.4-oss</version>
 	<name>sdk-java-restlet-interceptor</name>
 	<description>AJSC Restlet Interceptor</description>
 
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 	
 	<properties>

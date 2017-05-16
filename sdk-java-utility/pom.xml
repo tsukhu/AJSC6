@@ -32,7 +32,7 @@
 
 	<artifactId>sdk-java-utility</artifactId>
 	<packaging>jar</packaging>
-	<version>6.2.0.5</version>
+	<version>6.2.0.5-oss</version>
 
 	<url>https://github.com/att/AJSC6</url>
 	<scm>
@@ -44,13 +44,13 @@
 	<parent>
 		<groupId>com.att.ajsc</groupId>
 		<artifactId>sdk-java-starter-parent</artifactId>
-		<version>6.1.0.4</version>
+		<version>6.1.0.4-oss</version>
 	</parent>
 	
 	<properties>
-		<sdk.java.dao>6.2.0.5</sdk.java.dao>
-		<sdk.java.interceptor>6.2.0.4</sdk.java.interceptor>
-		<sdk.java.error>6.2.0.6</sdk.java.error>
+		<sdk.java.dao>6.2.0.5-oss</sdk.java.dao>
+		<sdk.java.interceptor>6.2.0.4-oss</sdk.java.interceptor>
+		<sdk.java.error>6.2.0.6-oss</sdk.java.error>
 		<project.scm.id>git-server</project.scm.id>
 	</properties>
 
