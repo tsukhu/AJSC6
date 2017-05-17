@@ -1,13 +1,14 @@
-rem call mvn -f sdk-java-common-logging/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-starter/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-error/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-dao/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-interceptor/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-utility/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-configuration/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-si-interceptor/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-camel-interceptor/pom.xml clean install -DskipTests
-rem call mvn -f sdk-java-restlet-interceptor/pom.xml clean install -DskipTests
+@echo off
+call mvn -f sdk-java-common-logging/pom.xml clean install -DskipTests
+call mvn -f sdk-java-starter/pom.xml clean install -DskipTests
+call mvn -f sdk-java-error/pom.xml clean install -DskipTests
+call mvn -f sdk-java-dao/pom.xml clean install -DskipTests
+call mvn -f sdk-java-interceptor/pom.xml clean install -DskipTests
+call mvn -f sdk-java-utility/pom.xml clean install -DskipTests
+call mvn -f sdk-java-configuration/pom.xml clean install -DskipTests
+call mvn -f sdk-java-si-interceptor/pom.xml clean install -DskipTests
+call mvn -f sdk-java-camel-interceptor/pom.xml clean install -DskipTests
+call mvn -f sdk-java-restlet-interceptor/pom.xml clean install -DskipTests
 call mvn -f sdk-java-introscope-interceptors/pom.xml clean install -DskipTests
 call mvn -f sdk-java-logging-interceptor/pom.xml clean install -DskipTests
 call mvn -f sdk-java-springservice/pom.xml clean install -DskipTests
