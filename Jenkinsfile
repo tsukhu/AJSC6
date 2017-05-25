@@ -12,7 +12,7 @@ node {
     checkout scm    
    
     // Mark the code build 'stage'....
-    stage 'Build dmaap-framework'
+    stage 'Build AJSC6'
     // Run the maven build
     //sh for unix bat for windows
 	
